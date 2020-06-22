@@ -3508,6 +3508,7 @@ check_geometry_column (sqlite3 * sqlite,
     const char *msg = "Sorry ... libspatialite was built disabling GEOS\n"
 	"and is thus unable to support IsValid";
 
+#if 0
 /* silencing stupid compiler warnings */
     if (sqlite == NULL || table == NULL || geom == NULL ||
 	||report_path == NULL || n_rows == NULL || n_invalids == NULL)
@@ -3515,6 +3516,7 @@ check_geometry_column (sqlite3 * sqlite,
 
     if (err_msg == NULL)
 	return 0;
+#endif
     len = strlen (msg);
     *err_msg = malloc (len + 1);
     strcpy (*err_msg, msg);
