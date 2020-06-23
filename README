@@ -1,3 +1,11 @@
+============================== spatialite core ==============================
+
+Contents
+--------
+
+- spatialite.podspec.json - adapted for core with no geos or proj features
+- libspatialite
+
   --------------------- libspatialite ------------------------
 
 PLEASE read the following information.
