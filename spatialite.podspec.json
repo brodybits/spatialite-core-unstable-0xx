@@ -13,7 +13,7 @@
   "source": {
     "http": "http://www.gaia-gis.it/gaia-sins/libspatialite-sources/libspatialite-4.1.1.tar.gz"
   },
-  "compiler_flags": "-DHAVE_CONFIG_H",
+  "compiler_flags": "-DHAVE_CONFIG_H -Wno-implicit-function-declaration",
   "ios": {
     "compiler_flags": "-U__APPLE__"
   },
